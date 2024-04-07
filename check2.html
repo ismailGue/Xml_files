@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #dddddd;
+}
+</style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>XML Modification Example</title>
+</head>
+<body>
+    <h1>Modify XML Example</h1>
+    <form>
+        <label for="name">الاسم:</label><br>
+        <input type="text" id="name" name="name"><br>
+        <label for="surname">اللقب:</label><br>
+        <input type="text" id="surname" name="surname"><br>
+        <label for="dob">تاريخ الميلاد:</label><br>
+        <input type="date" id="dob" name="dob"><br>
+        <label for="pob">مكان الميلاد:</label><br>
+        <input type="text" id="pob" name="pob"><br>
+        <label for="gender">الجنس:</label><br>
+        <input type="text" id="gender" name="gender"><br>
+        <label for="fatherName">اسم الأب:</label><br>
+        <input type="text" id="fatherName" name="fatherName"><br>
+        <label for="motherName">اسم ولقب الأم:</label><br>
+        <input type="text" id="motherName" name="motherName"><br><br>
+        <button type="button" onclick="loadAndModifyXML()">تغيير</button>
+    </form>
+    <table>
+        <tr>
+            <th>الاسم</th>
+            <th>اللقب</th>
+            <th>تاريخ الميلاد:</th>
+            <th>مكان الميلاد:</th><th>الجنس</th>
+            <th>اسم الأب:</th>
+            <th>اسم ولقب الأم:</th>
+        </tr>
+        <tr>
+            <td id="tda"></td>
+            <td id="tdb"></td>
+            <td id="tdc"></td>
+            <td id="tdd"></td>
+            <td id="tde"></td>
+            <td id="tdf"></td>
+            <td id="tdg"></td>
+        </tr>
+    </table>
+
+    <p id="output"></p>
+
+    <script src="script.js"></script>
+</body>
+</html>
